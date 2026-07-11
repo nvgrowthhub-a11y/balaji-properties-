@@ -16,20 +16,21 @@
 /* 1. Global Reset */
 body, html { background: #ffffff !important; color: #000000 !important; font-family: system-ui, sans-serif; }
 
-/* 2. HERO SECTION: IMAGE RAKHEGA, OVERLAY HATAYEGA */
+/* 2. HERO SECTION: IMAGE WAPAS LAANA AUR OVERLAY HATANA */
 #home { 
     position: relative; 
-    background-color: #000000 !important; 
+    background-color: transparent !important; 
     overflow: hidden; 
 }
-/* Hero ki image background mein rahegi aur clear dikhegi */
+
+/* Image ko wapas front mein lana aur set karna */
 #home img { 
     position: absolute; 
     top: 0; left: 0; 
     width: 100%; height: 100%; 
     object-fit: cover; 
-    z-index: 0; 
-    opacity: 0.9 !important; 
+    z-index: -1; /* Text ke piche image */
+    opacity: 1 !important; /* Image bilkul saaf */
 }
 /* Hero ka text White Bold rahega */
 #home, #home * { color: #ffffff !important; z-index: 1; position: relative; }
