@@ -162,15 +162,33 @@
         <a href="#contact" class="mob-link hover:text-brandBlue-400">Contact</a>
     </div>
 
-    <!-- HERO SECTION WITH PREMIUM PROPERTY LAND IMAGE BACKGROUND -->
-    <section id="home" class="relative min-h-screen w-full flex items-center pt-24 px-4 md:px-16 overflow-hidden bg-[#0B0F19]">
-        
-        <!-- Background Image Engine -->
-        <div class="absolute inset-0 z-0 w-full h-full">
-            <!-- Premium Commercial Industrial Land Site Visual -->
-            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1920&auto=format&fit=crop" 
-                 alt="Premium Commercial Property Land" 
-                 class="w-full h-full object-cover opacity-20 zoom-animation" />
+   <!-- HERO SECTION: IMAGE BACKGROUND + CLEAR TEXT -->
+<section id="home" class="relative w-full h-screen flex items-center px-4 md:px-16 overflow-hidden">
+    
+    <!-- Yahan image direct tag se lagayi hai, background-image CSS ki zaroorat nahi -->
+    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1920&auto=format&fit=crop" 
+         alt="Property Background" 
+         class="absolute inset-0 w-full h-full object-cover z-0">
+
+    <!-- Content Area -->
+    <div class="relative z-10 grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto w-full">
+        <div class="space-y-6">
+            <span class="inline-block text-white text-xs font-bold tracking-widest uppercase bg-blue-600 px-4 py-1.5 rounded-md">
+                Trusted Commercial Brokerage
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight drop-shadow-lg">
+                Find Premium Commercial Spaces & Factory Land
+            </h1>
+            <p class="text-white text-lg drop-shadow-md">
+                High-end Office Rentals, Factory Land, and Industrial Spaces tailored for your business.
+            </p>
+            <div class="flex gap-4">
+                <button class="bg-blue-600 text-white font-bold px-8 py-3 rounded-xl shadow-lg">Book Site Visit</button>
+                <button class="bg-white/20 backdrop-blur-md text-white font-bold px-8 py-3 rounded-xl border border-white/30">Call Now</button>
+            </div>
+        </div>
+    </div>
+</section>
             
             <!-- Cinematic Dark Gradients to keep text super readable -->
             <div class="absolute inset-0 bg-gradient-to-b from-[#0B0F19]/90 via-[#0B0F19]/40 to-[#0B0F19]"></div>
