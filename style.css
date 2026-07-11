@@ -8,29 +8,69 @@
 /* Cinematic Zoom Effect */
 .zoom-animation { animation: slowZoom 20s infinite alternate ease-in-out; }
 @keyframes slowZoom { 0% { transform: scale(1); } 100% { transform: scale(1.1); } }
+/* --- ULTIMATE CLEAN FLAT DESIGN (NO BOXES, BOLD BLACK TEXT) --- */
 
-/* Poori website ka base white */
-body, html { background: #ffffff !important; color: #000000 !important; font-family: system-ui, sans-serif; }
-
-/* Section transparent */
-section:not(#home) { background: #ffffff !important; }
-
-/* Saare boxes aur dhabbe hataye */
-section:not(#home) .grid > div { 
-    background: transparent !important; 
-    border: none !important; 
-    box-shadow: none !important; 
+/* 1. Global Reset */
+body, html {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-family: sans-serif !important;
 }
 
-/* Text Bold Black (Baki sab sections ke liye) */
-section:not(#home) h1, section:not(#home) h2, section:not(#home) p { 
-    color: #000000 !important; 
-    font-weight: 800 !important; 
+/* 2. Hero Section Fix (Image waisi hi rahegi, Text Bold Black/White logic) */
+#home {
+    position: relative;
+    background: transparent !important;
+}
+#home img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#home * {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8) !important;
+    font-weight: 800 !important;
 }
 
-/* WhatsApp Button */
+/* 3. Saare Sections se Boxes aur Shadows hatao */
+section, div, .grid, .bg-white, .bg-zinc-100, .bg-zinc-50, .border {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+/* 4. Poori Website ka Text Solid Black aur Bold */
+h1, h2, h3, h4, p, span, li, a, label, input, textarea {
+    color: #000000 !important;
+    font-weight: 800 !important;
+}
+
+/* 5. Blue Highlights wahi rahengi */
+.text-brandBlue-600, .text-brandBlue-500 {
+    color: #1d4ed8 !important;
+}
+
+/* 6. Form Inputs (Clean Border) */
+input, textarea, select {
+    border: 2px solid #000000 !important;
+    padding: 10px !important;
+    background: #ffffff !important;
+}
+
+/* 7. Buttons (Solid Blue) */
+button, .bg-brandBlue-600, a[class*="bg-brandBlue"] {
+    background-color: #1d4ed8 !important;
+    color: #ffffff !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 800 !important;
+}
+
+/* 8. WhatsApp Button hatane ke liye (Ise hide kar diya) */
 .whatsapp-float {
-    position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px;
-    background-color: #25d366 !important; color: #ffffff !important;
-    border-radius: 50% !important; z-index: 9999;
+    display: none !important;
 }
