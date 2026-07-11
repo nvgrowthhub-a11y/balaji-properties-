@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji Properties | Luxury Real Estate</title>
+    <!-- Tailwind CSS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Apni Custom CSS File Connect Ki -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0A0A0A] text-white font-sans antialiased">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="border-b border-zinc-800 bg-[#0A0A0A]/90 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-building-shield text-amber-500 text-xl"></i>
+            <span class="font-bold text-xl tracking-wider uppercase text-zinc-100">
+                Balaji <span class="text-amber-500">Properties</span>
+            </span>
+        </div>
+        <div class="flex gap-6 text-sm text-zinc-400 font-medium">
+            <a href="#home" class="hover:text-amber-500 transition-colors">Home</a>
+            <a href="#properties" class="hover:text-amber-500 transition-colors">Properties</a>
+            <a href="#contact" class="hover:text-amber-500 transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative h-[85vh] flex items-center justify-center overflow-hidden px-6">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Luxury Real Estate" class="w-full h-full object-cover opacity-30" />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-[#0A0A0A]"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl text-center space-y-6">
+            <span class="inline-block text-amber-500 text-xs font-bold tracking-widest uppercase border border-amber-500/30 px-4 py-1 rounded-full bg-amber-500/10">Redefining Luxury Living</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-zinc-100 leading-tight">
+                Discover Ultra-Premium Assets In <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Prime Locations</span>
+            </h1>
+            <div class="pt-4">
+                <a href="#properties" class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 text-black font-bold px-8 py-4 rounded-xl shadow-lg shadow-amber-500/20 transition-all">Explore Showcases <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROPERTIES SECTION -->
+    <section id="properties" class="py-24 px-6 max-w-7xl mx-auto space-y-12">
+        <div class="text-center space-y-3">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Our Signature Portfolios</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 pt-6">
+            <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-all duration-300 group">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Vijay Nagar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-zinc-100 group-hover:text-amber-500 transition-colors">Balaji Elegance</h3>
+                    <p class="text-zinc-400 text-sm mt-1">Vijay Nagar, Commercial Hub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="bg-zinc-950 border-t border-zinc-900 py-20 px-6">
+        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold tracking-tight">Let's Discuss Your Next Big Move</h2>
+            </div>
+            <div class="bg-zinc-900/40 border border-zinc-800 p-8 rounded-2xl space-y-4">
+                <form id="interestForm" class="space-y-3">
+                    <input type="text" id="userName" required placeholder="Your Name" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none" />
+                    <input type="tel" id="userPhone" required placeholder="Phone Number" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none" />
+                    <button type="submit" class="w-full bg-zinc-100 text-black font-bold py-3 rounded-xl transition-all text-sm cursor-pointer">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apni Custom JavaScript File Connect Ki -->
+    <script src="script.js"></script>
+</body>
+</html>
