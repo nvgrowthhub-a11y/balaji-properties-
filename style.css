@@ -143,3 +143,50 @@ input, textarea, select {
     background-color: #128c7e;
     transform: scale(1.1);
 }
+/* ==========================================
+   TARGET LOCATIONS CARDS CLEAN ENGINE
+   ========================================== */
+
+/* 1. Location Cards ke saare dhabbe aur boxes ko transparent karna */
+#hubs .grid > div, 
+[class*="target-hub"], 
+.grid > a,
+#hubs div[class*="bg-"] {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 2. Cards ke niche ka text container area transparent */
+.grid > div div, 
+.grid > a div {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* 3. Text Visibility Engine - Absolute Pitch Black */
+#hubs h3, 
+#hubs .text-xl, 
+#hubs font,
+.grid h3 {
+    color: #000000 !important; /* Location ke naam ekdum bold kaale */
+    font-weight: 800 !important;
+}
+
+#hubs p, 
+#hubs .text-sm, 
+#hubs .text-zinc-400 {
+    color: #111111 !important; /* Chota description bhi ekdum saaf aur kaala */
+    font-weight: 600 !important;
+    opacity: 1 !important;
+}
+
+/* 4. "View on Live Map" aur Icons ko Bright Royal Blue rakhna */
+#hubs a, 
+#hubs span, 
+#hubs i,
+.text-brandBlue-500 {
+    color: #1d4ed8 !important; /* Ekdum visible premium blue */
+    font-weight: 700 !important;
+}
