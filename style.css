@@ -8,69 +8,73 @@
 /* Cinematic Zoom Effect */
 .zoom-animation { animation: slowZoom 20s infinite alternate ease-in-out; }
 @keyframes slowZoom { 0% { transform: scale(1); } 100% { transform: scale(1.1); } }
-/* --- ULTIMATE CLEAN FLAT DESIGN (NO BOXES, BOLD BLACK TEXT) --- */
 
-/* 1. Global Reset */
-body, html {
-    background: #ffffff !important;
-    color: #000000 !important;
-    font-family: sans-serif !important;
-}
+/* 1. Global Reset (No Boxes everywhere) */
+body, html { background: #ffffff !important; color: #000000 !important; font-family: sans-serif !important; }
 
-/* 2. Hero Section Fix (Image waisi hi rahegi, Text Bold Black/White logic) */
-#home {
-    position: relative;
-    background: transparent !important;
-}
-#home img {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-#home * {
-    color: #ffffff !important;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.8) !important;
-    font-weight: 800 !important;
-}
-
-/* 3. Saare Sections se Boxes aur Shadows hatao */
-section, div, .grid, .bg-white, .bg-zinc-100, .bg-zinc-50, .border {
+section, div:not(#contact div), .grid:not(#contact .grid) {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
     backdrop-filter: none !important;
 }
 
-/* 4. Poori Website ka Text Solid Black aur Bold */
+/* 2. ONLY FORM SECTION: BOX STYLE RETAINED */
+#contact, #contact .bg-white, #contact .grid {
+    background: #f9f9f9 !important; /* Halka gray box */
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+    padding: 30px !important;
+    border-radius: 12px !important;
+}
+
+/* 3. Text Bold Black (Poori Website) */
 h1, h2, h3, h4, p, span, li, a, label, input, textarea {
     color: #000000 !important;
     font-weight: 800 !important;
 }
 
-/* 5. Blue Highlights wahi rahengi */
-.text-brandBlue-600, .text-brandBlue-500 {
-    color: #1d4ed8 !important;
-}
-
-/* 6. Form Inputs (Clean Border) */
+/* 4. Form Inputs (Border Black) */
 input, textarea, select {
     border: 2px solid #000000 !important;
-    padding: 10px !important;
     background: #ffffff !important;
 }
 
-/* 7. Buttons (Solid Blue) */
-button, .bg-brandBlue-600, a[class*="bg-brandBlue"] {
+/* 5. Buttons */
+button, .bg-brandBlue-600 {
     background-color: #1d4ed8 !important;
     color: #ffffff !important;
-    padding: 12px 24px !important;
     border-radius: 8px !important;
-    font-weight: 800 !important;
 }
 
-/* 8. WhatsApp Button hatane ke liye (Ise hide kar diya) */
-.whatsapp-float {
-    display: none !important;
+/* 6. WhatsApp Hidden */
+.whatsapp-float { display: none !important; }
+/* --- PREMIUM NAVIGATION BAR (SOLID WHITE, BOLD, 3D SHADOW) --- */
+
+/* Navigation Links ko target karna */
+nav a, nav span, #navbar a, .nav-menu a {
+    color: #ffffff !important;         /* Solid White */
+    font-weight: 900 !important;       /* Extra Bold */
+    text-transform: uppercase !important; 
+    letter-spacing: 1px !important;
+    
+    /* 3D Effect (Deep Text Shadow) */
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5), 
+                 0px 0px 10px rgba(255,255,255,0.3) !important;
+    
+    transition: all 0.3s ease !important;
+}
+
+/* Hover par thoda aur effect */
+nav a:hover {
+    text-shadow: 3px 3px 0px rgba(0,0,0,0.6), 
+                 0px 0px 15px rgba(255,255,255,0.8) !important;
+    transform: translateY(-2px);
+}
+
+/* Balaji Properties Logo/Brand Text */
+.brand-name, .logo-text {
+    color: #ffffff !important;
+    font-weight: 900 !important;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.5) !important;
 }
