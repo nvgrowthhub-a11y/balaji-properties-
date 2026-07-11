@@ -1,85 +1,415 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Balaji Properties | Luxury Real Estate</title>
-    <!-- Tailwind CSS Script -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- FontAwesome for Premium Icons -->
+    <link rel="canonical" href="https://balajiproperties.com" />
+    
+    <!-- ==========================================
+         ADVANCED MASTER SEO META TAGS
+         ========================================== -->
+    <title>Balaji Properties | Premium Commercial Office Space & Factory Land Ghaziabad</title>
+    <meta name="description" content="Discover ultra-premium commercial leasing, office spaces, and industrial factory land in Vijay Nagar, Pratap Vihar, Siddharth Vihar, and Wave City. Certified real estate consulting by Balaji Properties.">
+    <meta name="keywords" content="Balaji Properties, Office Rental Space Vijay Nagar, Factory Rental Land Pratap Vihar, Commercial Leasing Siddharth Vihar, Industrial Property Wave City, Property Dealers Ghaziabad">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Balaji Properties | Luxury Commercial Real Estate Portal">
+    <meta property="og:description" content="Awwwards-inspired luxury real estate asset management in prime destinations of Ghaziabad. Secure high ROI assets today.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop">
+    <meta property="og:url" content="https://balajiproperties.com">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Balaji Properties | Premium Commercial Spaces">
+    <meta name="twitter:description" content="Immersive architectural storytelling and institutional leasing platforms.">
+
+    <!-- ==========================================
+         COMPLETE MULTI-SCHEMA STRUCTURAL JSON-LD
+         ========================================== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "RealEstateAgent",
+          "@id": "https://balajiproperties.com/#agent",
+          "name": "Balaji Properties",
+          "alternateName": "Balaji Property",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
+          "url": "https://balajiproperties.com",
+          "telephone": "+9199999XXXXX",
+          "priceRange": "₹₹₹₹",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Premium Business Centre",
+            "addressLocality": "Ghaziabad",
+            "addressRegion": "Uttar Pradesh",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 28.6448,
+            "longitude": 77.4381
+          },
+          "areaServed": [
+            {"@type": "AdministrativeArea", "name": "Vijay Nagar"},
+            {"@type": "AdministrativeArea", "name": "Pratap Vihar"},
+            {"@type": "AdministrativeArea", "name": "Siddharth Vihar"},
+            {"@type": "AdministrativeArea", "name": "Wave City"}
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://balajiproperties.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you provide fully furnished managed office spaces?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, Balaji Properties offers state-of-the-art fully furnished, custom-tailored corporate setups and premium commercial office spaces with high-end tech infrastructure across prime micro-markets."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can we arrange corporate site compliance verification visits instantly?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. You can schedule immediate premium chauffeured physical or high-definition digital layout exploratory tours via our dedicated support channels."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- UI/Engine Framework Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxuryGold: {
+                            400: '#F59E0B',
+                            500: '#D97706',
+                            600: '#B45309'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Apni Custom CSS File Connect Ki -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-[#0A0A0A] text-white font-sans antialiased">
+<body class="bg-[#030303] text-zinc-100 antialiased overflow-x-hidden">
 
-    <!-- NAVIGATION BAR -->
-    <nav class="border-b border-zinc-800 bg-[#0A0A0A]/90 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
-        <div class="flex items-center gap-2">
-            <i class="fa-solid fa-building-shield text-amber-500 text-xl"></i>
-            <span class="font-bold text-xl tracking-wider uppercase text-zinc-100">
-                Balaji <span class="text-amber-500">Properties</span>
-            </span>
+    <!-- 1. CINEMATIC LOADING OVERLAY -->
+    <div id="loader" class="fixed inset-0 bg-[#030303] z-[9999] flex flex-col justify-center items-center pointer-events-none transition-all duration-1000 ease-out">
+        <div class="overflow-hidden mb-4">
+            <h2 class="text-xs uppercase tracking-[0.4em] text-amber-500 font-bold transform translate-y-full transition-transform duration-700 delay-300" id="loaderBrand">
+                Balaji Properties
+            </h2>
         </div>
-        <div class="flex gap-6 text-sm text-zinc-400 font-medium">
-            <a href="#home" class="hover:text-amber-500 transition-colors">Home</a>
-            <a href="#properties" class="hover:text-amber-500 transition-colors">Properties</a>
-            <a href="#contact" class="hover:text-amber-500 transition-colors">Contact</a>
+        <div class="w-48 h-[1px] bg-zinc-900 relative overflow-hidden rounded-full">
+            <div class="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-600 w-0 transition-all duration-1000 ease-out" id="progressBar"></div>
         </div>
-    </nav>
+    </div>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="relative h-[85vh] flex items-center justify-center overflow-hidden px-6">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Luxury Real Estate" class="w-full h-full object-cover opacity-30" />
-            <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-[#0A0A0A]"></div>
-        </div>
-        <div class="relative z-10 max-w-4xl text-center space-y-6">
-            <span class="inline-block text-amber-500 text-xs font-bold tracking-widest uppercase border border-amber-500/30 px-4 py-1 rounded-full bg-amber-500/10">Redefining Luxury Living</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-zinc-100 leading-tight">
-                Discover Ultra-Premium Assets In <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600">Prime Locations</span>
-            </h1>
-            <div class="pt-4">
-                <a href="#properties" class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 text-black font-bold px-8 py-4 rounded-xl shadow-lg shadow-amber-500/20 transition-all">Explore Showcases <i class="fa-solid fa-arrow-right"></i></a>
+    <!-- MAIN INTERACTIVE WRAPPER -->
+    <div id="scrollContainer">
+
+        <!-- CORE STICKY NAVIGATION -->
+        <nav class="fixed top-0 left-0 w-full z-50 border-b border-zinc-900/50 bg-[#030303]/70 backdrop-blur-xl px-8 py-5 flex justify-between items-center transition-all duration-300" id="mainNavbar">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-amber-500 to-amber-600 flex items-center justify-center text-black font-black">B</div>
+                <span class="font-bold text-lg tracking-widest uppercase">BALAJI <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-500">PROPERTIES</span></span>
             </div>
-        </div>
-    </section>
-
-    <!-- PROPERTIES SECTION -->
-    <section id="properties" class="py-24 px-6 max-w-7xl mx-auto space-y-12">
-        <div class="text-center space-y-3">
-            <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Our Signature Portfolios</h2>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8 pt-6">
-            <div class="bg-zinc-900/50 border border-zinc-800 rounded-2xl overflow-hidden hover:border-amber-500/50 transition-all duration-300 group">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Vijay Nagar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                </div>
-                <div class="p-6">
-                    <h3 class="text-xl font-bold text-zinc-100 group-hover:text-amber-500 transition-colors">Balaji Elegance</h3>
-                    <p class="text-zinc-400 text-sm mt-1">Vijay Nagar, Commercial Hub</p>
-                </div>
+            <div class="hidden md:flex gap-8 text-xs uppercase tracking-widest font-medium text-zinc-400">
+                <a href="#home" class="hover:text-amber-400 transition-colors">Home</a>
+                <a href="#about" class="hover:text-amber-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-amber-400 transition-colors">Services</a>
+                <a href="#horizontalAreas" class="hover:text-amber-400 transition-colors">Target Hubs</a>
+                <a href="#contact" class="hover:text-amber-400 transition-colors">ContactDesk</a>
             </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="bg-zinc-950 border-t border-zinc-900 py-20 px-6">
-        <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 class="text-3xl font-bold tracking-tight">Let's Discuss Your Next Big Move</h2>
+                <a href="#contact" class="text-xs uppercase tracking-wider border border-amber-500/30 px-5 py-2.5 rounded-full hover:bg-amber-500 hover:text-black font-semibold transition-all duration-300">
+                    Book Tour <i class="fa-solid fa-calendar-days ml-1"></i>
+                </a>
             </div>
-            <div class="bg-zinc-900/40 border border-zinc-800 p-8 rounded-2xl space-y-4">
-                <form id="interestForm" class="space-y-3">
-                    <input type="text" id="userName" required placeholder="Your Name" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none" />
-                    <input type="tel" id="userPhone" required placeholder="Phone Number" class="w-full bg-zinc-950 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none" />
-                    <button type="submit" class="w-full bg-zinc-100 text-black font-bold py-3 rounded-xl transition-all text-sm cursor-pointer">Submit Request</button>
-                </form>
-            </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Apni Custom JavaScript File Connect Ki -->
+        <!-- 2. LUXURY HERO SECTION (100vh) -->
+        <section id="home" class="relative h-screen w-full flex items-center overflow-hidden px-8 md:px-24">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop" alt="Luxury Asset Platform" class="w-full h-full object-cover scale-110 opacity-20" id="heroBg" />
+                <div class="absolute inset-0 bg-gradient-to-r from-[#030303] via-[#030303]/80 to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 grid md:grid-cols-12 gap-12 w-full items-center">
+                <div class="md:col-span-7 space-y-8">
+                    <div class="overflow-hidden">
+                        <span class="inline-block text-amber-500 text-xs font-bold tracking-[0.3em] uppercase border border-amber-500/20 bg-amber-500/5 px-4 py-1.5 rounded-full" id="heroBadge">
+                            Architectural Excellence & Commercial Brokerage
+                        </span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-none" id="heroTitle">
+                        Find Premium <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-200 to-amber-600">Commercial Spaces</span>
+                    </h1>
+                    <p class="text-zinc-400 text-md md:text-lg max-w-xl font-light leading-relaxed">
+                        High-tier Office Rentals, Premium Factory Land, & Industrial Infrastructure tailored perfectly inside Ghaziabad's ultra-growth micro-markets.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-gradient-to-r from-amber-500 to-amber-600 text-black font-bold px-8 py-4 rounded-xl shadow-xl shadow-amber-500/10 hover:shadow-amber-500/20 transform hover:-translate-y-0.5 transition-all text-xs uppercase tracking-wider">Book Site Visit</a>
+                        <a href="tel:+9199999XXXXX" class="border border-zinc-800 bg-zinc-900/30 backdrop-blur px-8 py-4 rounded-xl hover:border-amber-500/50 transition-all text-xs uppercase tracking-wider font-semibold flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-amber-500"></i> Call Office
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Floating Interactive Cards Context -->
+                <div class="md:col-span-5 hidden md:flex flex-col gap-4 relative" id="heroFloatTrack">
+                    <div class="float-card bg-zinc-900/40 border border-zinc-800/80 p-6 rounded-2xl backdrop-blur-xl flex items-center gap-4 transform translate-x-12 opacity-0 transition-all duration-700">
+                        <div class="p-4 bg-amber-500/10 text-amber-400 rounded-xl"><i class="fa-solid fa-building-user text-xl"></i></div>
+                        <div><h3 class="font-bold text-sm">Corporate Office Spaces</h3><p class="text-xs text-zinc-500">Premium setups ready to deploy</p></div>
+                    </div>
+                    <div class="float-card bg-zinc-900/40 border border-zinc-800/80 p-6 rounded-2xl backdrop-blur-xl flex items-center gap-4 transform translate-x-12 opacity-0 transition-all duration-700 delay-150">
+                        <div class="p-4 bg-amber-500/10 text-amber-400 rounded-xl"><i class="fa-solid fa-industry text-xl"></i></div>
+                        <div><h3 class="font-bold text-sm">Factory Rental Land</h3><p class="text-xs text-zinc-500">Heavy connectivity industrial zones</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-zinc-600">
+                <span class="text-[9px] uppercase tracking-widest">Scroll Story</span>
+                <div class="w-1 h-6 bg-zinc-900 rounded-full overflow-hidden"><div class="w-full h-1/2 bg-amber-500 animate-bounce"></div></div>
+            </div>
+        </section>
+
+        <!-- 3. SPLIT IMAGE REVEAL ABOUT SECTION -->
+        <section id="about" class="py-32 px-8 md:px-24 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative group overflow-hidden rounded-3xl border border-zinc-800">
+                <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+                <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=800&auto=format&fit=crop" alt="Institutional Brokerage" class="w-full h-[550px] object-cover filter brightness-75 scale-105 group-hover:scale-100 transition-transform duration-700" loading="lazy" />
+            </div>
+            <div class="space-y-8">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-500 block">Elite Corporate Legacy</span>
+                <h2 class="text-4xl font-extrabold tracking-tight">We Architect Real Estate Solutions for Institutional Growth</h2>
+                <p class="text-zinc-400 font-light leading-relaxed">
+                    Balaji Properties bypasses boilerplate dealing models. We provide a tailored legal, technical, and logistical consulting experience for high-profile business deployments in North India.
+                </p>
+                <div class="grid grid-cols-2 gap-6 border-t border-zinc-900 pt-8">
+                    <div>
+                        <h4 class="text-3xl font-black text-amber-400 tracking-tight">500k+</h4>
+                        <p class="text-xs uppercase tracking-widest text-zinc-500 mt-1">Sq.Ft Leased</p>
+                    </div>
+                    <div>
+                        <h4 class="text-3xl font-black text-amber-400 tracking-tight">99.4%</h4>
+                        <p class="text-xs uppercase tracking-widest text-zinc-500 mt-1">Retention Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SERVICES CORE SECTION -->
+        <section id="services" class="py-32 bg-zinc-950/30 border-y border-zinc-900/40 px-8 md:px-24">
+            <div class="max-w-7xl mx-auto space-y-16">
+                <div class="text-center space-y-4">
+                    <span class="text-xs uppercase tracking-widest text-amber-500 font-bold">Comprehensive Capabilities</span>
+                    <h2 class="text-4xl font-extrabold tracking-tight">Industrial & Corporate Infrastructure</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="bg-zinc-900/20 border border-zinc-900 p-8 rounded-2xl group hover:border-amber-500/30 transition-all duration-300 backdrop-blur-md">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-black transition-colors duration-300"><i class="fa-solid fa-laptop-code text-lg"></i></div>
+                        <h3 class="text-lg font-bold mt-6 text-zinc-200">Office Rental Space</h3>
+                        <p class="text-xs text-zinc-500 mt-2 font-light leading-relaxed">Fully functional plug-and-play architectural premium complexes.</p>
+                    </div>
+                    <div class="bg-zinc-900/20 border border-zinc-900 p-8 rounded-2xl group hover:border-amber-500/30 transition-all duration-300 backdrop-blur-md">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-black transition-colors duration-300"><i class="fa-solid fa-warehouse text-lg"></i></div>
+                        <h3 class="text-lg font-bold mt-6 text-zinc-200">Factory Rental Land</h3>
+                        <p class="text-xs text-zinc-500 mt-2 font-light leading-relaxed">Heavy load bearing compliance approved industrial plots.</p>
+                    </div>
+                    <div class="bg-zinc-900/20 border border-zinc-900 p-8 rounded-2xl group hover:border-amber-500/30 transition-all duration-300 backdrop-blur-md">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-black transition-colors duration-300"><i class="fa-solid fa-file-signature text-lg"></i></div>
+                        <h3 class="text-lg font-bold mt-6 text-zinc-200">Commercial Leasing</h3>
+                        <p class="text-xs text-zinc-500 mt-2 font-light leading-relaxed">Multi-tier long lease operations and anchor tenancy models.</p>
+                    </div>
+                    <div class="bg-zinc-900/20 border border-zinc-900 p-8 rounded-2xl group hover:border-amber-500/30 transition-all duration-300 backdrop-blur-md">
+                        <div class="w-12 h-12 rounded-xl bg-zinc-900 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-black transition-colors duration-300"><i class="fa-solid fa-gavel text-lg"></i></div>
+                        <h3 class="text-lg font-bold mt-6 text-zinc-200">Industrial Property</h3>
+                        <p class="text-xs text-zinc-500 mt-2 font-light leading-relaxed">Logistics parks, cold storages, and heavy manufacturing houses.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. HORIZONTAL HUB CONTROLLER (Apple/Awwwards Sticky Experience) -->
+        <section id="horizontalAreas" class="relative bg-[#060606] h-auto">
+            <div class="sticky-container">
+                <div class="h-screen w-full flex flex-col justify-center overflow-hidden relative sticky top-0">
+                    <div class="px-8 md:px-24 mb-6 absolute top-16 left-0">
+                        <span class="text-xs uppercase tracking-[0.3em] text-amber-500 block mb-2 font-bold">Premium Core Geographies</span>
+                        <h2 class="text-3xl md:text-5xl font-black tracking-tight">Dominating Micro-Markets</h2>
+                    </div>
+                    
+                    <!-- Horizontal Horizontal Sliding Row Container -->
+                    <div class="horizontal-slider flex items-center gap-8 px-8 md:px-24 transition-transform duration-500 ease-out" id="horizontalTrack">
+                        
+                        <!-- Card 1: Vijay Nagar -->
+                        <div class="h-96 w-[350px] md:w-[480px] bg-zinc-900/40 border border-zinc-800 rounded-3xl p-8 flex-shrink-0 flex flex-col justify-between relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-700" alt="Vijay Nagar Core Hub" />
+                            <div class="relative z-10">
+                                <span class="text-xs text-amber-400 tracking-widest uppercase font-semibold">Tier-1 Commercial Hub</span>
+                                <h3 class="text-3xl font-bold mt-2">Vijay Nagar</h3>
+                                <p class="text-xs text-zinc-400 font-light mt-3 leading-relaxed">High footfall infrastructure, excellent retail and executive setup connectivity options.</p>
+                            </div>
+                            <div class="relative z-10 flex justify-between items-center border-t border-zinc-800/80 pt-4">
+                                <span class="text-[10px] text-zinc-500 uppercase tracking-wider">Available Spaces: 14 Office Complex</span>
+                                <a href="#contact" class="text-xs font-bold text-amber-400 group-hover:underline flex items-center gap-1">Explore Hub <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Pratap Vihar -->
+                        <div class="h-96 w-[350px] md:w-[480px] bg-zinc-900/40 border border-zinc-800 rounded-3xl p-8 flex-shrink-0 flex flex-col justify-between relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-700" alt="Pratap Vihar Area" />
+                            <div class="relative z-10">
+                                <span class="text-xs text-amber-400 tracking-widest uppercase font-semibold">Industrial Powerhouse</span>
+                                <h3 class="text-3xl font-bold mt-2">Pratap Vihar</h3>
+                                <p class="text-xs text-zinc-400 font-light mt-3 leading-relaxed">Optimized layouts for heavy power grid connectivity and structural factory foundations.</p>
+                            </div>
+                            <div class="relative z-10 flex justify-between items-center border-t border-zinc-800/80 pt-4">
+                                <span class="text-[10px] text-zinc-500 uppercase tracking-wider">Available Spaces: 8 Premium Factory Lands</span>
+                                <a href="#contact" class="text-xs font-bold text-amber-400 group-hover:underline flex items-center gap-1">Explore Hub <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Siddharth Vihar -->
+                        <div class="h-96 w-[350px] md:w-[480px] bg-zinc-900/40 border border-zinc-800 rounded-3xl p-8 flex-shrink-0 flex flex-col justify-between relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-700" alt="Siddharth Vihar Complex" />
+                            <div class="relative z-10">
+                                <span class="text-xs text-amber-400 tracking-widest uppercase font-semibold">Premium Mixed Development</span>
+                                <h3 class="text-3xl font-bold mt-2">Siddharth Vihar</h3>
+                                <p class="text-xs text-zinc-400 font-light mt-3 leading-relaxed">Strategically sitting close to the highway lines with futuristic corporate avenues.</p>
+                            </div>
+                            <div class="relative z-10 flex justify-between items-center border-t border-zinc-800/80 pt-4">
+                                <span class="text-[10px] text-zinc-500 uppercase tracking-wider">Available: 11 Premium Multi-Suites</span>
+                                <a href="#contact" class="text-xs font-bold text-amber-400 group-hover:underline flex items-center gap-1">Explore Hub <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Wave City -->
+                        <div class="h-96 w-[350px] md:w-[480px] bg-zinc-900/40 border border-zinc-800 rounded-3xl p-8 flex-shrink-0 flex flex-col justify-between relative overflow-hidden group">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-10 group-hover:scale-105 transition-transform duration-700" alt="Wave City Megaproject" />
+                            <div class="relative z-10">
+                                <span class="text-xs text-amber-400 tracking-widest uppercase font-semibold">Smart Tech Infrastructure</span>
+                                <h3 class="text-3xl font-bold mt-2">Wave City</h3>
+                                <p class="text-xs text-zinc-400 font-light mt-3 leading-relaxed">World-class high-speed network integration corridors and logistics configurations.</p>
+                            </div>
+                            <div class="relative z-10 flex justify-between items-center border-t border-zinc-800/80 pt-4">
+                                <span class="text-[10px] text-zinc-500 uppercase tracking-wider">Available: 22 Smart Logistics Plots</span>
+                                <a href="#contact" class="text-xs font-bold text-amber-400 group-hover:underline flex items-center gap-1">Explore Hub <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. HIGH-PERFORMANCE FAQS ACCORDION -->
+        <section class="py-32 px-8 md:px-24 max-w-4xl mx-auto space-y-12">
+            <div class="text-center space-y-3">
+                <span class="text-xs text-amber-500 uppercase tracking-widest font-bold">Exploratory Assistance</span>
+                <h2 class="text-3xl font-extrabold tracking-tight">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="faq-item border border-zinc-900 rounded-2xl bg-zinc-950/40 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold text-sm tracking-wide text-zinc-200 focus:outline-none">
+                        <span>Do you provide fully furnished managed office spaces?</span>
+                        <i class="fa-solid fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs text-zinc-400 leading-relaxed pb-0">
+                        <p class="pb-5">Yes, Balaji Properties offers state-of-the-art fully furnished, custom-tailored corporate setups and premium commercial office spaces with high-end tech infrastructure across prime micro-markets.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item border border-zinc-900 rounded-2xl bg-zinc-950/40 overflow-hidden">
+                    <button class="w-full text-left px-6 py-5 flex justify-between items-center font-semibold text-sm tracking-wide text-zinc-200 focus:outline-none">
+                        <span>Can we arrange corporate site compliance verification visits instantly?</span>
+                        <i class="fa-solid fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6 text-xs text-zinc-400 leading-relaxed pb-0">
+                        <p class="pb-5">Absolutely. You can schedule immediate premium chauffeured physical or high-definition digital layout exploratory tours via our dedicated support channels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. GLASSMORPHISM HIGH CONVERSION CONTACT DESK -->
+        <section id="contact" class="py-32 px-8 md:px-24 bg-gradient-to-b from-transparent to-[#030303] border-t border-zinc-900/60">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-16 items-center">
+                <div class="md:col-span-5 space-y-6">
+                    <span class="text-xs uppercase text-amber-500 font-bold tracking-widest">Connect with Corporate Desk</span>
+                    <h2 class="text-4xl font-extrabold tracking-tight">Let's Secure Your Next Corporate Asset</h2>
+                    <p class="text-zinc-400 font-light text-sm leading-relaxed">
+                        Drop your verification coordinates. Our principal commercial asset managers will map physical compliance metrics matching your industry.
+                    </p>
+                    <div class="space-y-4 pt-4">
+                        <a href="tel:+9199999XXXXX" class="flex items-center gap-4 text-zinc-300 hover:text-amber-400 transition-colors group">
+                            <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-amber-500"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div><p class="text-[10px] text-zinc-500 uppercase tracking-wider">Direct Hotline</p><p class="text-sm font-semibold">+91 99999 XXXXX</p></div>
+                        </a>
+                        <a href="https://wa.me/9199999XXXXX" target="_blank" class="flex items-center gap-4 text-zinc-300 hover:text-emerald-400 transition-colors group">
+                            <div class="w-10 h-10 rounded-xl bg-zinc-900 border border-zinc-800 flex items-center justify-center text-emerald-500"><i class="fa-brands fa-whatsapp text-lg"></i></div>
+                            <div><p class="text-[10px] text-zinc-500 uppercase tracking-wider">WhatsApp Workspace</p><p class="text-sm font-semibold">Chat Instant Desk</p></div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form Card Block -->
+                <div class="md:col-span-7 bg-zinc-900/20 border border-zinc-900 p-8 md:p-10 rounded-3xl backdrop-blur-2xl relative shadow-2xl">
+                    <form id="leadCaptureForm" class="space-y-5">
+                        <div class="grid md:grid-cols-2 gap-5">
+                            <div class="space-y-2">
+                                <label class="text-[10px] uppercase tracking-widest text-zinc-500 font-medium">Your Full Name</label>
+                                <input type="text" required id="formName" placeholder="John Doe" class="w-full bg-black/40 border border-zinc-800 rounded-xl px-4 py-3.5 text-xs text-white focus:outline-none focus:border-amber-500/50 transition-colors" />
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-[10px] uppercase tracking-widest text-zinc-500 font-medium">Mobile Number</label>
+                                <input type="tel" required id="formPhone" placeholder="+91 XXXXX XXXXX" class="w-full bg-black/40 border border-zinc-800 rounded-xl px-4 py-3.5 text-xs text-white focus:outline-none focus:border-amber-500/50 transition-colors" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-[10px] uppercase tracking-widest text-zinc-500 font-medium">Desired Asset Type</label>
+                            <select id="formAsset" class="w-full bg-black/40 border border-zinc-800 rounded-xl px-4 py-3.5 text-xs text-zinc-400 focus:outline-none focus:border-amber-500/50 transition-colors">
+                                <option>Office Rental Space</option>
+                                <option>Factory Rental Land</option>
+                                <option>Commercial Leasing Portfolio</option>
+                                <option>Industrial Park Infrastructure</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-black font-extrabold py-4 rounded-xl text-xs uppercase tracking-widest transition-all shadow-xl shadow-amber-500/5 cursor-pointer">
+                            Request Strategic Callback <i class="fa-solid fa-arrow-right-long ml-1"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- INSTITUTIONAL FOOTER -->
+        <footer class="border-t border-zinc-900 bg-[#020202] py-12 px-8 text-center text-xs text-zinc-600 tracking-wider">
+            <div>&copy; 2026 Balaji Properties. Designed for Institutional High Performance & Premium SEO Authority.</div>
+        </footer>
+
+    </div>
+
+    <!-- Script Routing Connection -->
     <script src="script.js"></script>
 </body>
 </html>
