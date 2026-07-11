@@ -62,3 +62,38 @@ video {
   height: 100% !important;
   object-fit: cover !important;
 }
+/* ==========================================
+   GLOBAL LIGHT THEME OVERRIDE (POORI WEBSITE WHITE)
+   ========================================== */
+body, html, section, main {
+    background-color: #ffffff !important;
+    color: #18181b !important; /* Dark Zinc Text */
+}
+
+/* Saare Grid Cards ko Premium Light Gray/White Base dena */
+.bg-zinc-900, .bg-zinc-900\/30, .bg-zinc-900\/40, .bg-zinc-900\/60, .bg-zinc-950\/20, .bg-zinc-950\/40 {
+    background-color: #f4f4f5 !important; /* Soft Light Gray */
+    border-color: #e4e4e7 !important;     /* Light Border */
+}
+
+/* Heading aur Text ko fully readable (Dark) banana */
+h1, h2, h3, h4, h5, h6, .text-white {
+    color: #09090b !important; /* Pitch Black for Headings */
+}
+
+/* Description aur chote text ko properly balance karna */
+p, .text-zinc-400, .text-zinc-500 {
+    color: #52525b !important; /* Professional Muted Dark Gray */
+}
+
+/* Input Fields (Form) ko clean light look dena */
+input, textarea, select {
+    background-color: #ffffff !important;
+    color: #09090b !important;
+    border: 1px solid #d4d4d8 !important;
+}
+
+/* Map aur baaki sections ke dark lines hatana */
+.border-zinc-800, .border-zinc-900\/60, .border-y {
+    border-color: #e4e4e7 !important;
+}
