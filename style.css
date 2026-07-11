@@ -1,4 +1,6 @@
-/* Custom resets & scroller styles */
+/* ==========================================
+   ADVANCED SMOOTH LOOKING UTILITIES
+   ========================================== */
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -13,9 +15,45 @@
     background: #3B82F6;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #0B0F19;
+/* Cinematic Zoom Effect for Hero Background */
+.zoom-animation {
+    animation: slowZoom 20s infinite alternate ease-in-out;
+}
+
+@keyframes slowZoom {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+}
+
+/* Hero Content Fade In */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s forwards cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Scroll Animation Hooks (Awwwards-Style Focus Reveal) */
+.scroll-reveal {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, filter 0.8s ease, transform 0.8s ease;
+    will-change: opacity, filter, transform;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
 }
