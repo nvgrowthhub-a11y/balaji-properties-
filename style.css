@@ -1,20 +1,54 @@
-/* Smooth scrolling standard logic */
-html {
-    scroll-behavior: smooth;
+/* ==========================================================================
+   LUXURY BRANDING CUSTOM DESIGN SPECS
+   ========================================================================== */
+
+/* Remove structural scrollbars to support programmatic Lenis/GSAP setups smooth */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #030303;
+}
+::-webkit-scrollbar-thumb {
+    background: #1c1c1c;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #d97706;
 }
 
-/* Custom fade-in effect for luxury layout */
-body {
-    animation: fadeInPage 0.8s ease-in-out;
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #030303;
 }
 
-@keyframes fadeInPage {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Horizontal Sticky Section Configuration */
+.sticky-container {
+    height: 300vh; /* Adjust height dynamically to control vertical scrolling length */
+}
+
+.horizontal-slider {
+    will-change: transform;
+}
+
+/* Glassmorphism Standard Framework Card */
+.float-card {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+/* Blur-to-focus custom transitions */
+.focus-reveal {
+    filter: blur(10px);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: filter 0.8s ease, opacity 0.8s ease, transform 0.8s ease;
+}
+
+.focus-reveal.active {
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
 }
