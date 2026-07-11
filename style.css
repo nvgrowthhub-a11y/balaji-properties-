@@ -63,37 +63,79 @@ video {
   object-fit: cover !important;
 }
 /* ==========================================
-   GLOBAL LIGHT THEME OVERRIDE (POORI WEBSITE WHITE)
+   PREMIUM ELITE LIGHT THEME CORE ENGINE
    ========================================== */
-body, html, section, main {
+
+/* 1. Global Reset - Pure Corporate White Base */
+body, html, main {
     background-color: #ffffff !important;
-    color: #18181b !important; /* Dark Zinc Text */
+    color: #1c1917 !important; /* Rich Dark Charcoal */
+    font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* Saare Grid Cards ko Premium Light Gray/White Base dena */
-.bg-zinc-900, .bg-zinc-900\/30, .bg-zinc-900\/40, .bg-zinc-900\/60, .bg-zinc-950\/20, .bg-zinc-950\/40 {
-    background-color: #f4f4f5 !important; /* Soft Light Gray */
-    border-color: #e4e4e7 !important;     /* Light Border */
+/* 2. Fix All Section Backgrounds & Force Remove Hidden Gradients */
+section, #home, #services, #hubs, #process, #contact {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
 }
 
-/* Heading aur Text ko fully readable (Dark) banana */
-h1, h2, h3, h4, h5, h6, .text-white {
-    color: #09090b !important; /* Pitch Black for Headings */
+/* Remove tricky absolute dark/gray overlay shapes that block text */
+div[class*="bg-gradient-to-"], div[class*="bg-zinc-950/"], div[class*="from-[#0B0F19]"] {
+    background: transparent !important;
+    background-image: none !important;
 }
 
-/* Description aur chote text ko properly balance karna */
-p, .text-zinc-400, .text-zinc-500 {
-    color: #52525b !important; /* Professional Muted Dark Gray */
+/* 3. Hero Section Image Contrast Fix */
+#home img {
+    opacity: 0.12 !important; /* Background land image soft rahegi taaki text clear dikhe */
+    filter: grayscale(30%);
 }
 
-/* Input Fields (Form) ko clean light look dena */
+/* 4. Text Visibility Engine - Pitch Black for High Contrast */
+h1, h2, h3, h4, .text-white, [class*="text-white"] {
+    color: #09090b !important; /* Absolute Black */
+}
+
+/* Paragraphs & Subtitles Fix */
+p, .text-zinc-400, .text-zinc-500, .font-light {
+    color: #3f3f46 !important; /* High contrast reading gray */
+    font-weight: 500 !important;
+}
+
+/* 5. Fixed Premium Cards (Services & Target Hubs) */
+.grid > div, [class*="bg-zinc-900"] {
+    background-color: #f8fafc !important; /* Soft Premium Ice-White */
+    border: 1px solid #e2e8f0 !important;  /* Ultra Sharp Clean Border */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05) !important;
+}
+
+/* 6. Fixed FAQ Section (White Text on White Fix) */
+#faq div, #faq button, .bg-zinc-800\/50, [class*="bg-zinc-800"] {
+    background-color: #f1f5f9 !important; /* Distinct light gray bars */
+    color: #09090b !important;
+}
+#faq p, #faq span {
+    color: #1e293b !important;
+}
+
+/* 7. Booking Desk / Contact Form Fix */
+#contact {
+    background-color: #ffffff !important;
+}
+#contact div[class*="bg-zinc-900"] {
+    background-color: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+}
 input, textarea, select {
     background-color: #ffffff !important;
     color: #09090b !important;
-    border: 1px solid #d4d4d8 !important;
+    border: 1px solid #cbd5e1 !important;
+}
+input::placeholder {
+    color: #94a3b8 !important;
 }
 
-/* Map aur baaki sections ke dark lines hatana */
-.border-zinc-800, .border-zinc-900\/60, .border-y {
-    border-color: #e4e4e7 !important;
+/* Contact text highlights */
+#contact h2, #contact h3 {
+    color: #09090b !important;
 }
