@@ -78,3 +78,27 @@ nav a:hover {
     font-weight: 900 !important;
     text-shadow: 2px 2px 0px rgba(0,0,0,0.5) !important;
 }
+/* --- HERO SECTION: PREMIUM WHITE 3D TEXT --- */
+
+#home, #home h1, #home h2, #home h3, #home p, #home span {
+    /* 1. Solid White */
+    color: #ffffff !important; 
+    
+    /* 2. Extra Bold */
+    font-weight: 900 !important; 
+    
+    /* 3. 3D Highlight Effect (Drop Shadow) */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 
+                 0px 0px 10px rgba(0,0,0,0.5) !important;
+}
+
+/* Specific Highlight for "Commercial Spaces" if needed */
+#home .text-brandBlue-600 {
+    color: #3b82f6 !important; /* Blue wahi rahega */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
+}
+
+/* Ensuring no black color overrides this */
+#home * {
+    color: #ffffff !important;
+}
