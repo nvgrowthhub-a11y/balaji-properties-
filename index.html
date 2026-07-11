@@ -19,35 +19,60 @@
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- COMPLETE STRUCTURAL JSON-LD SCHEMAS -->
-    <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "RealEstateAgent",
-          "@id": "https://balajiproperties.com/#agent",
-          "name": "Balaji Properties",
-          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop",
-          "url": "https://balajiproperties.com",
-          "telephone": "+918586808514",
-          "priceRange": "₹₹₹",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Ghaziabad",
-            "addressRegion": "Uttar Pradesh",
-            "addressCountry": "IN"
-          },
-          "areaServed": [
-            {"@type": "AdministrativeArea", "name": "Vijay Nagar"},
-            {"@type": "AdministrativeArea", "name": "Pratap Vihar"},
-            {"@type": "AdministrativeArea", "name": "Siddharth Vihar"},
-            {"@type": "AdministrativeArea", "name": "Wave City"}
-          ]
-        }
-      ]
+  "@type": "FAQPage",
+  "@id": "https://balajiproperties.com/#faq",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you provide fully furnished managed office spaces?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, Balaji Properties offers premium fully furnished commercial office spaces and factory lands across prime locations in Ghaziabad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "In which locations of Ghaziabad do you operate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We dominantly operate in Ghaziabad's prime commercial hubs including Vijay Nagar, Pratap Vihar, Siddharth Vihar, and Wave City."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are all the industrial factory lands and properties legally verified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Every single listing in our commercial leasing portfolio goes through a strict multi-level background check to ensure 100% transparent legal clearance and RERA compliance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can we customize the lease terms for long-term commercial renting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we specialize in tailor-made commercial leasing agreements. Lease periods, lock-in clauses, and structure modifications can be tailored based on your business requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you charge any consultancy or advance site visit fees?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, our chauffeured physical site visits and primary property consultations are completely free of charge."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I book an urgent virtual tour or on-site meeting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can use our Instant Booking Desk form to send your details directly to our official WhatsApp channel (+91 8586808514), or directly call our office desk."
+      }
     }
-    </script>
-
+  ]
+}
     <!-- Tailwind CSS Script -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -293,10 +318,15 @@
         </div>
     </section>
 
-    <!-- FAQS SECTION -->
+    <!-- 6. FAQS SECTION (UPDATED WITH 6 TOTAL FAQS) -->
     <section class="py-24 px-4 max-w-3xl mx-auto space-y-10 scroll-reveal">
-        <h2 class="text-2xl font-bold text-center text-white">Frequently Asked Questions</h2>
+        <div class="text-center space-y-2">
+            <span class="text-xs uppercase tracking-widest text-brandBlue-400 font-bold">Clear Doubts</span>
+            <h2 class="text-3xl font-bold text-white">Frequently Asked Questions</h2>
+        </div>
+        
         <div class="space-y-4">
+            <!-- FAQ 1 (Original) -->
             <div class="faq-item border border-zinc-800 bg-zinc-900/20 rounded-xl overflow-hidden">
                 <button class="w-full text-left px-5 py-4 flex justify-between items-center font-semibold text-sm text-zinc-200 focus:outline-none">
                     <span>Do you provide fully furnished managed office spaces?</span>
@@ -304,6 +334,61 @@
                 </button>
                 <div class="max-h-0 overflow-hidden transition-all duration-300 px-5 text-xs text-zinc-400 bg-zinc-950/20">
                     <p class="py-4">Yes, Balaji Properties offers state-of-the-art fully furnished corporate setups and premium commercial spaces with complete infrastructure.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 (New) -->
+            <div class="faq-item border border-zinc-800 bg-zinc-900/20 rounded-xl overflow-hidden">
+                <button class="w-full text-left px-5 py-4 flex justify-between items-center font-semibold text-sm text-zinc-200 focus:outline-none">
+                    <span>In which locations of Ghaziabad do you operate?</span>
+                    <i class="fa-solid fa-chevron-down text-zinc-500 transition-transform"></i>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all duration-300 px-5 text-xs text-zinc-400 bg-zinc-950/20">
+                    <p class="py-4">We dominantly operate in Ghaziabad's prime commercial hubs including Vijay Nagar, Pratap Vihar, Siddharth Vihar, and Wave City.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 (New) -->
+            <div class="faq-item border border-zinc-800 bg-zinc-900/20 rounded-xl overflow-hidden">
+                <button class="w-full text-left px-5 py-4 flex justify-between items-center font-semibold text-sm text-zinc-200 focus:outline-none">
+                    <span>Are all the industrial factory lands and properties legally verified?</span>
+                    <i class="fa-solid fa-chevron-down text-zinc-500 transition-transform"></i>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all duration-300 px-5 text-xs text-zinc-400 bg-zinc-950/20">
+                    <p class="py-4">Absolutely. Every single listing in our commercial leasing portfolio goes through a strict multi-level background check to ensure 100% transparent legal clearance and RERA compliance.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 (New) -->
+            <div class="faq-item border border-zinc-800 bg-zinc-900/20 rounded-xl overflow-hidden">
+                <button class="w-full text-left px-5 py-4 flex justify-between items-center font-semibold text-sm text-zinc-200 focus:outline-none">
+                    <span>Can we customize the lease terms for long-term commercial renting?</span>
+                    <i class="fa-solid fa-chevron-down text-zinc-500 transition-transform"></i>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all duration-300 px-5 text-xs text-zinc-400 bg-zinc-950/20">
+                    <p class="py-4">Yes, we specialize in tailor-made commercial leasing agreements. Lease periods, lock-in clauses, and structure modifications can be tailored based on your business requirements.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 5 (New) -->
+            <div class="faq-item border border-zinc-800 bg-zinc-900/20 rounded-xl overflow-hidden">
+                <button class="w-full text-left px-5 py-4 flex justify-between items-center font-semibold text-sm text-zinc-200 focus:outline-none">
+                    <span>Do you charge any consultancy or advance site visit fees?</span>
+                    <i class="fa-solid fa-chevron-down text-zinc-500 transition-transform"></i>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all duration-300 px-5 text-xs text-zinc-400 bg-zinc-950/20">
+                    <p class="py-4">No, our chauffeured physical site visits and primary property consultations are completely free of charge. You can directly book your site visit slot via our WhatsApp button.</p>
+                </div>
+            </div>
+
+            <!-- FAQ 6 (New) -->
+            <div class="faq-item border border-zinc-800 bg-zinc-900/20 rounded-xl overflow-hidden">
+                <button class="w-full text-left px-5 py-4 flex justify-between items-center font-semibold text-sm text-zinc-200 focus:outline-none">
+                    <span>How can I book an urgent virtual tour or on-site meeting?</span>
+                    <i class="fa-solid fa-chevron-down text-zinc-500 transition-transform"></i>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all duration-300 px-5 text-xs text-zinc-400 bg-zinc-950/20">
+                    <p class="py-4">You can use our Instant Booking Desk form to send your details directly to our official WhatsApp channel (+91 8586808514), or directly call our office desk for real-time priority setup.</p>
                 </div>
             </div>
         </div>
