@@ -62,3 +62,84 @@ video {
   height: 100% !important;
   object-fit: cover !important;
 }
+/* ==========================================
+   RAM RATAN RAJPUT PROPERTIES - LIGHT COLOR SYSTEM
+   ========================================== */
+
+/* Global Clean Light Base */
+body, html, main, section {
+    background-color: #ffffff !important;
+    background: #ffffff !important;
+    color: #1c1917 !important; /* Sharp Reading Gray/Black */
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Remove tricky gradient overlays entirely */
+div[class*="bg-gradient-to-"], div[class*="bg-zinc-950/"], div[class*="from-[#0B0F19]"] {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* Hero Land Background Image - Crystal Clear Visibility */
+#home img {
+    opacity: 0.85 !important; /* Image bilkul saaf chamkegi */
+    filter: none !important;
+}
+
+/* Text Colors - Pure High Contrast Black & Royal Blue */
+h1, h2, h3, h4, .text-white, strong {
+    color: #0a0a0a !important; /* Absolute Bold Black */
+}
+
+/* Royal Property Blue Highlights */
+.text-brandBlue-400, .text-brandBlue-500, .text-brandBlue-600, span[class*="text-brandBlue"] {
+    color: #1d4ed8 !important; /* Deep Premium Blue */
+}
+
+/* Simple Transparent Layouts (No Ugly Boxes) */
+#home div[class*="bg-zinc-900"], 
+#home div[class*="bg-white"],
+#contact div[class*="bg-zinc-900"],
+#contact div[class*="bg-white"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Clean Form Style */
+input, textarea, select {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #71717a !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+}
+
+/* ==========================================
+   FLOATING WHATSAPP BUTTON STYLES
+   ========================================== */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transform: scale(1.1);
+}
