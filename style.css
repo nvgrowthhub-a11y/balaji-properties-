@@ -63,120 +63,61 @@ video {
   object-fit: cover !important;
 }
 /* ==========================================
-   GLOBAL TRANS-CLEAN REAL ESTATE SYSTEM
-   (Poori Website Se Boxes Gayab Aur Text Solid Black/Blue)
+   SMART THEME ENGINE (Hero = Bold White / Rest = Bold Black)
    ========================================== */
 
-/* 1. Global Background Reset - Pure White Layout */
-body, html, main, section, footer, header, nav {
+/* 1. Global Reset - Light Mode Default */
+body, html, section {
     background: #ffffff !important;
-    background-color: #ffffff !important;
     color: #000000 !important;
     font-family: system-ui, -apple-system, sans-serif;
 }
 
-/* 2. Remove ALL Gradients, Dark Overlays & Hidden Shapes Across the Website */
-div[class*="bg-gradient-to-"], 
-div[class*="bg-zinc-950/"], 
-div[class*="bg-zinc-900/"],
-div[class*="from-[#"], 
-div[class*="via-[#"],
-div[class*="to-[#"],
-.absolute.inset-0 {
-    background: transparent !important;
-    background-image: none !important;
-    background-color: transparent !important;
+/* 2. Hero Section Special Logic (Bold White Text) */
+#home, #home * {
+    color: #ffffff !important; /* Hero ka sab kuch White */
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.5) !important; /* readability ke liye halki shadow */
+}
+#home .text-brandBlue-500, #home .text-brandBlue-600 {
+    color: #3b82f6 !important; /* Blue highlights wahi rahengi */
 }
 
-/* 3. Global Box & Card Destroyer - Saare Boxes Transparent */
-div, section div, .grid > div, [class*="bg-zinc-"], [class*="bg-white/"] {
+/* 3. Rest of the Website Logic (Bold Black Text) */
+section:not(#home) h1, section:not(#home) h2, section:not(#home) h3, 
+section:not(#home) p, section:not(#home) span, section:not(#home) li {
+    color: #000000 !important; /* Hero ko chhodkar sab kuch Bold Black */
+    font-weight: 800 !important;
+}
+
+/* 4. Remove all unwanted boxes and gradients */
+div[class*="bg-zinc-"], div[class*="bg-white/"], .grid > div {
     background: transparent !important;
-    background-color: transparent !important;
     border: none !important;
     box-shadow: none !important;
 }
 
-/* Hero Land Background & Target Location Images Layout - 100% Clear */
-#home img, #hubs img, img {
-    opacity: 1 !important; /* Saari images ekdum asli rang mein saaf dikhengi */
-    filter: none !important;
-    mix-blend-mode: normal !important;
-}
-
-/* 4. Text Visibility Engine - Absolute Pitch Black */
-h1, h2, h3, h4, h5, h6, 
-.text-white, [class*="text-white"], 
-strong, font, b {
-    color: #000000 !important; /* Saare headings aur main text absolute black */
+/* 5. Blue Highlights Fix */
+.text-brandBlue-400, .text-brandBlue-500, .text-brandBlue-600 {
+    color: #1d4ed8 !important;
     font-weight: 800 !important;
 }
 
-p, span, li, .text-zinc-400, .text-zinc-500, .font-light, .text-sm {
-    color: #000000 !important; /* Saare chote text, descriptions aur paragraphs bhi ekdum saaf aur kaale */
-    font-weight: 500 !important;
-    opacity: 1 !important;
-}
-
-/* 5. Deep Premium Royal Blue Highlights */
-.text-brandBlue-400, 
-.text-brandBlue-500, 
-.text-brandBlue-600, 
-span[class*="text-brandBlue"],
-a[class*="text-brandBlue"],
-#hubs a,
-#hubs i {
-    color: #1d4ed8 !important; /* Sahi aur gehra royal blue */
-    font-weight: 700 !important;
-}
-
-/* 6. Clean Minimal Form Style (Inputs and Buttons need distinct look to function) */
-#contact input, #contact textarea, #contact select {
-    background-color: #ffffff !important;
+/* 6. Form Inputs (Border Black rahegi taaki dikhe) */
+input, textarea, select {
+    border: 2px solid #000000 !important;
     color: #000000 !important;
-    border: 1px solid #000000 !important; /* Saaf dikhne wali simple border */
-    border-radius: 8px !important;
-    padding: 12px !important;
-}
-#contact button, [class*="bg-brandBlue"] {
-    background-color: #1d4ed8 !important; /* Action buttons premium blue */
-    color: #ffffff !important;
-    border-radius: 8px !important;
+    background: #ffffff !important;
 }
 
-/* 7. FAQ Layout Fix - No Boxes, Just Clean Minimal Text Rows */
-#faq button, #faq div {
-    background: transparent !important;
-    background-color: transparent !important;
-    color: #000000 !important;
-    border-bottom: 1px solid #e4e4e7 !important; /* Simple clean line separation */
-}
-
-/* ==========================================
-   FLOATING WHATSAPP BUTTON STYLES (Keep Intact)
-   ========================================== */
+/* 7. WhatsApp Button (Keep it professional) */
 .whatsapp-float {
     position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
+    width: 60px; height: 60px;
+    bottom: 40px; right: 40px;
     background-color: #25d366 !important;
     color: #ffffff !important;
-    border-radius: 50px !important;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.3) !important;
-    z-index: 9999;
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    text-decoration: none !important;
-}
-.whatsapp-float i {
-    color: #ffffff !important;
-}
-.whatsapp-float:hover {
-    background-color: #128c7e !important;
-    transform: scale(1.1);
+    border-radius: 50% !important;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
 }
