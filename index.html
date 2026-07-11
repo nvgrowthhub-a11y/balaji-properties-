@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://balajiproperties.com" />
     
-    <!-- ==========================================
-         ADVANCED SEO META TAGS
-         ========================================== -->
     <title>Balaji Properties | Commercial Office Space & Factory Land Ghaziabad</title>
     <meta name="description" content="Premium commercial leasing, office spaces, and industrial factory land in Vijay Nagar, Pratap Vihar, Siddharth Vihar, and Wave City by Balaji Properties.">
     <meta name="keywords" content="Balaji Properties, Office Rental Space Vijay Nagar, Factory Rental Land Pratap Vihar, Commercial Leasing Siddharth Vihar, Industrial Property Wave City">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph & Twitter -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Balaji Properties | Commercial Real Estate Hub">
@@ -46,20 +43,6 @@
             {"@type": "AdministrativeArea", "name": "Siddharth Vihar"},
             {"@type": "AdministrativeArea", "name": "Wave City"}
           ]
-        },
-        {
-          "@type": "FAQPage",
-          "@id": "https://balajiproperties.com/#faq",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "Do you provide fully furnished managed office spaces?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Yes, Balaji Properties offers premium fully furnished commercial office spaces and factory lands across prime locations in Ghaziabad."
-              }
-            }
-          ]
         }
       ]
     }
@@ -76,8 +59,7 @@
                             400: '#60A5FA',
                             500: '#3B82F6',
                             600: '#2563EB'
-                        },
-                        brandGrey: '#9CA3AF'
+                        }
                     }
                 }
             }
@@ -89,35 +71,53 @@
 <body class="bg-[#0B0F19] text-zinc-100 antialiased overflow-x-hidden">
 
     <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 w-full z-50 border-b border-zinc-800/60 bg-[#0B0F19]/80 backdrop-blur-xl px-6 py-4 flex justify-between items-center">
+    <nav class="fixed top-0 left-0 w-full z-50 border-b border-zinc-800/60 bg-[#0B0F19]/90 backdrop-blur-xl px-6 py-4 flex justify-between items-center">
         <div class="flex items-center gap-2">
             <div class="w-8 h-8 rounded-lg bg-brandBlue-500 flex items-center justify-center text-white font-black">B</div>
             <span class="font-bold text-md tracking-wider uppercase">BALAJI <span class="text-brandBlue-400">PROPERTIES</span></span>
         </div>
-        <div class="hidden md:flex gap-6 text-xs uppercase tracking-widest font-medium text-zinc-400">
+        
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex gap-6 text-xs uppercase tracking-widest font-medium text-zinc-400">
             <a href="#home" class="hover:text-brandBlue-400 transition-colors">Home</a>
             <a href="#about" class="hover:text-brandBlue-400 transition-colors">About</a>
             <a href="#services" class="hover:text-brandBlue-400 transition-colors">Services</a>
             <a href="#hubs" class="hover:text-brandBlue-400 transition-colors">Target Hubs</a>
-            <a href="#process" class="hover:text-brandBlue-400 transition-colors">Our Process</a>
+            <a href="#process" class="hover:text-brandBlue-400 transition-colors">Process</a>
             <a href="#contact" class="hover:text-brandBlue-400 transition-colors">Contact</a>
         </div>
-        <div>
-            <a href="https://wa.me/918586808514" target="_blank" class="text-xs uppercase tracking-wider bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 font-semibold transition-all flex items-center gap-1.5">
+
+        <div class="flex items-center gap-4">
+            <a href="https://wa.me/918586808514" target="_blank" class="hidden sm:flex text-xs uppercase tracking-wider bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 font-semibold transition-all items-center gap-1.5">
                 <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp
             </a>
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="lg:hidden text-white focus:outline-none text-xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </div>
     </nav>
 
-    <!-- 1. HERO SECTION -->
-    <section id="home" class="relative min-h-screen w-full flex items-center pt-24 px-6 md:px-16 overflow-hidden">
+    <!-- Mobile Nav Menu -->
+    <div id="mobileMenu" class="fixed inset-0 z-40 bg-[#0B0F19] transform translate-x-full transition-transform duration-300 flex flex-col justify-center items-center gap-6 text-lg uppercase font-semibold">
+        <button id="closeBtn" class="absolute top-6 right-6 text-2xl text-white"><i class="fa-solid fa-xmark"></i></button>
+        <a href="#home" class="mob-link hover:text-brandBlue-400">Home</a>
+        <a href="#about" class="mob-link hover:text-brandBlue-400">About</a>
+        <a href="#services" class="mob-link hover:text-brandBlue-400">Services</a>
+        <a href="#hubs" class="mob-link hover:text-brandBlue-400">Target Hubs</a>
+        <a href="#process" class="mob-link hover:text-brandBlue-400">Process</a>
+        <a href="#contact" class="mob-link hover:text-brandBlue-400">Contact</a>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="relative min-h-screen w-full flex items-center pt-24 px-4 md:px-16 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop" alt="Premium Asset Platform" class="w-full h-full object-cover opacity-15" />
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1920&auto=format&fit=crop" alt="Premium Asset Platform" class="w-full h-full object-cover opacity-20 zoom-animation" />
             <div class="absolute inset-0 bg-gradient-to-t from-[#0B0F19] via-transparent to-[#0B0F19]"></div>
         </div>
 
-        <div class="relative z-10 grid md:grid-cols-12 gap-8 w-full items-center max-w-7xl mx-auto">
-            <div class="md:col-span-7 space-y-6">
+        <div class="relative z-10 grid lg:grid-cols-12 gap-12 w-full items-center max-w-7xl mx-auto">
+            <div class="lg:col-span-7 space-y-6 text-left animate-fade-in">
                 <span class="inline-block text-brandBlue-400 text-xs font-bold tracking-widest uppercase bg-brandBlue-500/10 px-4 py-1.5 rounded-md border border-brandBlue-500/20">
                     Trusted Commercial Brokerage
                 </span>
@@ -135,26 +135,27 @@
                 </div>
             </div>
 
-            <!-- Floating Right Info Cards -->
-            <div class="md:col-span-5 grid grid-cols-2 gap-4">
-                <div class="bg-zinc-900/60 border border-zinc-800/80 p-5 rounded-xl backdrop-blur-md">
-                    <i class="fa-solid fa-building text-brandBlue-400 text-xl mb-3"></i>
+            <!-- Right side Grid info on Desktop, full width on Mobile -->
+            <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4 animate-fade-in delay-200">
+                <div class="bg-zinc-900/60 border border-zinc-800/80 p-6 rounded-xl backdrop-blur-md hover:border-brandBlue-500/40 transition-all">
+                    <i class="fa-solid fa-building text-brandBlue-400 text-2xl mb-3"></i>
                     <h3 class="font-bold text-sm text-white">Office Rentals</h3>
-                    <p class="text-xs text-zinc-500 mt-1">Plug & play corporate spaces.</p>
+                    <p class="text-xs text-zinc-500 mt-1">Plug & play premium corporate spaces.</p>
                 </div>
-                <div class="bg-zinc-900/60 border border-zinc-800/80 p-5 rounded-xl backdrop-blur-md">
-                    <i class="fa-solid fa-industry text-brandBlue-400 text-xl mb-3"></i>
+                <div class="bg-zinc-900/60 border border-zinc-800/80 p-6 rounded-xl backdrop-blur-md hover:border-brandBlue-500/40 transition-all">
+                    <i class="fa-solid fa-industry text-brandBlue-400 text-2xl mb-3"></i>
                     <h3 class="font-bold text-sm text-white">Factory Land</h3>
-                    <p class="text-xs text-zinc-500 mt-1">Industrial approved grids.</p>
+                    <p class="text-xs text-zinc-500 mt-1">Heavy load infrastructure industrial grids.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 2. ABOUT BALAJI PROPERTIES -->
-    <section id="about" class="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div class="rounded-2xl overflow-hidden border border-zinc-800 shadow-xl">
-            <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=800&auto=format&fit=crop" alt="About Balaji Properties" class="w-full h-[400px] object-cover" />
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 px-4 max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center scroll-reveal">
+        <div class="rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl relative group">
+            <div class="absolute inset-0 bg-brandBlue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=800&auto=format&fit=crop" alt="About Balaji Properties" class="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105" />
         </div>
         <div class="space-y-6">
             <span class="text-xs font-bold uppercase tracking-widest text-brandBlue-400">Corporate Legacy</span>
@@ -175,31 +176,31 @@
         </div>
     </section>
 
-    <!-- 3. SERVICES SECTION -->
-    <section id="services" class="py-24 bg-zinc-950/40 border-y border-zinc-900/60 px-6">
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 bg-zinc-950/40 border-y border-zinc-900/60 px-4 scroll-reveal">
         <div class="max-w-7xl mx-auto space-y-12">
             <div class="text-center space-y-2">
                 <span class="text-xs uppercase tracking-widest text-brandBlue-400 font-bold">What We Offer</span>
                 <h2 class="text-3xl font-bold text-white">Our Core Property Services</h2>
             </div>
             
-            <div class="grid md:grid-cols-4 gap-6">
-                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-xl hover:border-brandBlue-500/40 transition-all group">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-xl hover:border-brandBlue-500/40 transition-all group hover:-translate-y-1 duration-300">
                     <div class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-brandBlue-400 group-hover:bg-brandBlue-500 group-hover:text-white transition-all"><i class="fa-solid fa-desktop text-sm"></i></div>
                     <h3 class="text-md font-bold mt-4 text-white">Office Rental Space</h3>
                     <p class="text-xs text-zinc-500 mt-2 font-light">Premium managed corporate offices for modern teams.</p>
                 </div>
-                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-xl hover:border-brandBlue-500/40 transition-all group">
+                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-xl hover:border-brandBlue-500/40 transition-all group hover:-translate-y-1 duration-300">
                     <div class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-brandBlue-400 group-hover:bg-brandBlue-500 group-hover:text-white transition-all"><i class="fa-solid fa-layer-group text-sm"></i></div>
                     <h3 class="text-md font-bold mt-4 text-white">Factory Rental Land</h3>
                     <p class="text-xs text-zinc-500 mt-2 font-light">Heavy industrial utility setups and production fields.</p>
                 </div>
-                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-xl hover:border-brandBlue-500/40 transition-all group">
+                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-xl hover:border-brandBlue-500/40 transition-all group hover:-translate-y-1 duration-300">
                     <div class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-brandBlue-400 group-hover:bg-brandBlue-500 group-hover:text-white transition-all"><i class="fa-solid fa-file-invoice text-sm"></i></div>
                     <h3 class="text-md font-bold mt-4 text-white">Commercial Leasing</h3>
                     <p class="text-xs text-zinc-500 mt-2 font-light">Long-term corporate legal contracts and leasing management.</p>
                 </div>
-                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-xl hover:border-brandBlue-500/40 transition-all group">
+                <div class="bg-zinc-900/40 border border-zinc-800 p-6 rounded-xl hover:border-brandBlue-500/40 transition-all group hover:-translate-y-1 duration-300">
                     <div class="w-10 h-10 rounded-lg bg-zinc-800 flex items-center justify-center text-brandBlue-400 group-hover:bg-brandBlue-500 group-hover:text-white transition-all"><i class="fa-solid fa-warehouse text-sm"></i></div>
                     <h3 class="text-md font-bold mt-4 text-white">Industrial Property</h3>
                     <p class="text-xs text-zinc-500 mt-2 font-light">Smart logistical storage complexes and warehouses.</p>
@@ -208,17 +209,17 @@
         </div>
     </section>
 
-    <!-- 4. TARGET HUBS SECTION (No Sticky/No Blank Spaces) -->
-    <section id="hubs" class="py-24 px-6 max-w-7xl mx-auto space-y-12">
+    <!-- TARGET HUBS SECTION (Fully Responsive Clean Grid) -->
+    <section id="hubs" class="py-24 px-4 max-w-7xl mx-auto space-y-12 scroll-reveal">
         <div class="text-center space-y-2">
             <span class="text-xs uppercase tracking-widest text-brandBlue-400 font-bold">Prime Locations</span>
             <h2 class="text-3xl font-bold text-white">Our Dominating Target Areas</h2>
         </div>
         
-        <div class="grid md:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Card 1 -->
-            <div class="bg-zinc-900/30 border border-zinc-800/80 rounded-xl overflow-hidden shadow-lg hover:border-brandBlue-500/30 transition-all">
-                <div class="h-44 bg-zinc-800"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-60" alt="Vijay Nagar Hub" /></div>
+            <div class="bg-zinc-900/30 border border-zinc-800/80 rounded-xl overflow-hidden shadow-lg hover:border-brandBlue-500/30 transition-all group">
+                <div class="h-44 bg-zinc-800 overflow-hidden"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" alt="Vijay Nagar Hub" /></div>
                 <div class="p-5 space-y-3">
                     <h3 class="text-lg font-bold text-white">Vijay Nagar</h3>
                     <p class="text-xs text-zinc-400 font-light">Top corporate complexes with ultimate retail connectivity markets.</p>
@@ -226,8 +227,8 @@
                 </div>
             </div>
             <!-- Card 2 -->
-            <div class="bg-zinc-900/30 border border-zinc-800/80 rounded-xl overflow-hidden shadow-lg hover:border-brandBlue-500/30 transition-all">
-                <div class="h-44 bg-zinc-800"><img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-60" alt="Pratap Vihar Area" /></div>
+            <div class="bg-zinc-900/30 border border-zinc-800/80 rounded-xl overflow-hidden shadow-lg hover:border-brandBlue-500/30 transition-all group">
+                <div class="h-44 bg-zinc-800 overflow-hidden"><img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" alt="Pratap Vihar Area" /></div>
                 <div class="p-5 space-y-3">
                     <h3 class="text-lg font-bold text-white">Pratap Vihar</h3>
                     <p class="text-xs text-zinc-400 font-light">Optimized utility zones perfect for factory setups and warehouses.</p>
@@ -235,8 +236,8 @@
                 </div>
             </div>
             <!-- Card 3 -->
-            <div class="bg-zinc-900/30 border border-zinc-800/80 rounded-xl overflow-hidden shadow-lg hover:border-brandBlue-500/30 transition-all">
-                <div class="h-44 bg-zinc-800"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-60" alt="Siddharth Vihar" /></div>
+            <div class="bg-zinc-900/30 border border-zinc-800/80 rounded-xl overflow-hidden shadow-lg hover:border-brandBlue-500/30 transition-all group">
+                <div class="h-44 bg-zinc-800 overflow-hidden"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" alt="Siddharth Vihar" /></div>
                 <div class="p-5 space-y-3">
                     <h3 class="text-lg font-bold text-white">Siddharth Vihar</h3>
                     <p class="text-xs text-zinc-400 font-light">Futuristic commercial towers connected directly with broad highways.</p>
@@ -244,8 +245,8 @@
                 </div>
             </div>
             <!-- Card 4 -->
-            <div class="bg-zinc-900/30 border border-zinc-800/80 rounded-xl overflow-hidden shadow-lg hover:border-brandBlue-500/30 transition-all">
-                <div class="h-44 bg-zinc-800"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-60" alt="Wave City Hub" /></div>
+            <div class="bg-zinc-900/30 border border-zinc-800/80 rounded-xl overflow-hidden shadow-lg hover:border-brandBlue-500/30 transition-all group">
+                <div class="h-44 bg-zinc-800 overflow-hidden"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=400&auto=format&fit=crop" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform duration-500" alt="Wave City Hub" /></div>
                 <div class="p-5 space-y-3">
                     <h3 class="text-lg font-bold text-white">Wave City</h3>
                     <p class="text-xs text-zinc-400 font-light">High-tech smart network lanes and wide logistical spaces.</p>
@@ -255,49 +256,49 @@
         </div>
     </section>
 
-    <!-- 5. OUR PROCESS SECTION -->
-    <section id="process" class="py-24 bg-zinc-950/20 border-t border-zinc-900/60 px-6">
+    <!-- PROCESS SECTION -->
+    <section id="process" class="py-24 bg-zinc-950/20 border-t border-zinc-900/60 px-4 scroll-reveal">
         <div class="max-w-7xl mx-auto space-y-12">
             <div class="text-center space-y-2">
                 <span class="text-xs uppercase tracking-widest text-brandBlue-400 font-bold">Workflow</span>
                 <h2 class="text-3xl font-bold text-white">How We Secure Your Deal</h2>
             </div>
-            <div class="grid md:grid-cols-5 gap-6 text-center">
-                <div class="bg-zinc-900/30 p-5 rounded-xl border border-zinc-800/50">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 text-center">
+                <div class="bg-zinc-900/30 p-5 rounded-xl border border-zinc-800/50 hover:border-brandBlue-500/30 transition-all">
                     <div class="text-xl font-black text-brandBlue-400 mb-2">01</div>
                     <h4 class="font-bold text-sm mb-1">Requirement</h4>
-                    <p class="text-[11px] text-zinc-500">We analyze your asset demands.</p>
+                    <p class="text-[11px] text-zinc-500">We analyze asset demands.</p>
                 </div>
-                <div class="bg-zinc-900/30 p-5 rounded-xl border border-zinc-800/50">
+                <div class="bg-zinc-900/30 p-5 rounded-xl border border-zinc-800/50 hover:border-brandBlue-500/30 transition-all">
                     <div class="text-xl font-black text-brandBlue-400 mb-2">02</div>
                     <h4 class="font-bold text-sm mb-1">Selection</h4>
                     <p class="text-[11px] text-zinc-500">Shortlisting perfect spots.</p>
                 </div>
-                <div class="bg-zinc-900/30 p-5 rounded-xl border border-zinc-800/50">
+                <div class="bg-zinc-900/30 p-5 rounded-xl border border-zinc-800/50 hover:border-brandBlue-500/30 transition-all col-span-2 md:col-span-1">
                     <div class="text-xl font-black text-brandBlue-400 mb-2">03</div>
                     <h4 class="font-bold text-sm mb-1">Site Visit</h4>
-                    <p class="text-[11px] text-zinc-500">Chauffeured site physical tours.</p>
+                    <p class="text-[11px] text-zinc-500">Chauffeured structural tours.</p>
                 </div>
-                <div class="bg-zinc-900/30 p-5 rounded-xl border border-zinc-800/50">
+                <div class="bg-zinc-900/30 p-5 rounded-xl border border-zinc-800/50 hover:border-brandBlue-500/30 transition-all">
                     <div class="text-xl font-black text-brandBlue-400 mb-2">04</div>
                     <h4 class="font-bold text-sm mb-1">Documentation</h4>
                     <p class="text-[11px] text-zinc-500">100% transparent legal checks.</p>
                 </div>
-                <div class="bg-zinc-900/30 p-5 rounded-xl border border-zinc-800/50">
+                <div class="bg-zinc-900/30 p-5 rounded-xl border border-zinc-800/50 hover:border-brandBlue-500/30 transition-all">
                     <div class="text-xl font-black text-brandBlue-400 mb-2">05</div>
                     <h4 class="font-bold text-sm mb-1">Move In</h4>
-                    <p class="text-[11px] text-zinc-500">Seamless operations kick-off.</p>
+                    <p class="text-[11px] text-zinc-500">Seamless setup kick-off.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 6. FAQS ACCORDION -->
-    <section class="py-24 px-6 max-w-3xl mx-auto space-y-10">
+    <!-- FAQS SECTION -->
+    <section class="py-24 px-4 max-w-3xl mx-auto space-y-10 scroll-reveal">
         <h2 class="text-2xl font-bold text-center text-white">Frequently Asked Questions</h2>
         <div class="space-y-4">
             <div class="faq-item border border-zinc-800 bg-zinc-900/20 rounded-xl overflow-hidden">
-                <button class="w-full text-left px-5 py-4 flex justify-between items-center font-semibold text-sm text-zinc-200">
+                <button class="w-full text-left px-5 py-4 flex justify-between items-center font-semibold text-sm text-zinc-200 focus:outline-none">
                     <span>Do you provide fully furnished managed office spaces?</span>
                     <i class="fa-solid fa-chevron-down text-zinc-500 transition-transform"></i>
                 </button>
@@ -308,10 +309,10 @@
         </div>
     </section>
 
-    <!-- 7. CONTACT & WHATSAPP GENERATOR DESK -->
-    <section id="contact" class="py-24 px-6 bg-gradient-to-b from-transparent to-[#070A12] border-t border-zinc-900">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-12 gap-12 items-center">
-            <div class="md:col-span-5 space-y-4">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 px-4 bg-gradient-to-b from-transparent to-[#070A12] border-t border-zinc-900 scroll-reveal">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-5 space-y-4">
                 <span class="text-xs uppercase text-brandBlue-400 font-bold tracking-widest">Instant Booking Desk</span>
                 <h2 class="text-3xl font-bold text-white">Let's Secure Your Next Corporate Asset</h2>
                 <p class="text-zinc-400 font-light text-sm">
@@ -326,9 +327,9 @@
             </div>
 
             <!-- Form Block -->
-            <div class="md:col-span-7 bg-zinc-900/40 border border-zinc-800 p-6 md:p-8 rounded-2xl backdrop-blur-md">
+            <div class="lg:col-span-7 bg-zinc-900/40 border border-zinc-800 p-6 md:p-8 rounded-2xl backdrop-blur-md">
                 <form id="whatsappForm" class="space-y-4">
-                    <div class="grid md:grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="space-y-1">
                             <label class="text-[10px] uppercase text-zinc-500 font-medium">Your Name</label>
                             <input type="text" required id="wName" placeholder="Enter full name" class="w-full bg-black/50 border border-zinc-800 rounded-lg px-4 py-3 text-xs text-white focus:outline-none focus:border-brandBlue-500" />
@@ -355,10 +356,10 @@
         </div>
     </section>
 
-    <!-- FOOTER WITH INSTAGRAM -->
-    <footer class="border-t border-zinc-900 bg-[#06080F] py-12 px-6 text-center text-xs text-zinc-500">
+    <!-- FOOTER -->
+    <footer class="border-t border-zinc-900 bg-[#06080F] py-12 px-4 text-center text-xs text-zinc-500">
         <div class="flex justify-center gap-4 mb-4">
-            <a href="https://www.instagram.com/__balaji_property__0014?igsh=ZGZ4b2F4anBmY2Jk" target="_blank" class="w-8 h-8 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-pink-500 transition-colors">
+            <a href="https://www.instagram.com/__balaji_property__0014?igsh=ZGZ4b2F4anBmY2Jk" target="_blank" class="w-8 h-8 rounded-full bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-400 hover:text-pink-500 transition-colors text-sm">
                 <i class="fa-brands fa-instagram"></i>
             </a>
         </div>
