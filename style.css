@@ -102,3 +102,25 @@ nav a:hover {
 #home * {
     color: #ffffff !important;
 }
+/* --- ABOUT SECTION FIX: WAPAS LAANA AUR STYLE KARNA --- */
+
+#about {
+    display: block !important;          /* Section ko wapas visible karna */
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: #ffffff !important;     /* White background */
+    padding: 60px 0 !important;
+}
+
+/* About Section ka Text Black aur Bold */
+#about h1, #about h2, #about h3, #about p, #about span {
+    color: #000000 !important;          /* Solid Black */
+    font-weight: 800 !important;        /* Extra Bold */
+}
+
+/* About Section ke boxes wapas saaf dikhane ke liye */
+#about .grid > div {
+    background: #ffffff !important;     /* Box ka color white */
+    border: 1px solid #e2e8f0 !important; /* Patli border taaki box alag dikhe */
+    padding: 20px !important;
+}
